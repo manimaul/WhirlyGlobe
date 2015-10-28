@@ -206,7 +206,7 @@ public class MapGlobeTestFragment extends Fragment implements ConfigOptions.Conf
                     sources[ii] = new RemoteTileInfo("http://a.tiles.mapbox.com/v3/mousebird.precip-example-layer" + ii + "/","png",0,6);
                 cacheDirName = "forecastio";
                 SphericalMercatorCoordSystem coordSys = new SphericalMercatorCoordSystem();
-                MultiplexTileSource multiTileSource = new MultiplexTileSource(sources,coordSys);
+                MultiplexTileSource multiTileSource = new MultiplexTileSource(baseControl, sources, coordSys);
 
                 forecastIOLayer = new QuadImageTileLayer(baseControl,coordSys,multiTileSource);
                 forecastIOLayer.setSimultaneousFetches(1);
