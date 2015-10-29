@@ -4,5 +4,7 @@ build/
 *.iml
 local.properties
 *.class
-.gradle/
-libs/
+.gradle
+jni/com_mousebird_maply_QuadImageTileLayer_FrameStatus.h
+jni/com_mousebird_maply_QuadImageTileLayer_ImageUpdater.h
+*.so
